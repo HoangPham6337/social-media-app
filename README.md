@@ -1,50 +1,60 @@
-# React + TypeScript + Vite
+# A Social Media Application
+> This repository contains the code corresponding to the tutorial available of JavaScript Mastery.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern social media application built using cutting-edge technologies, enabling users to connect, share, and interact seamlessly. This project incorporates features such as user authentication, posts, likes, comments, and more.
 
-Currently, two official plugins are available:
+# Features
+- User Authentication
+  - Sign up, log in, and log out functionality.
+  - Secure user authentication using Appwrite.
+- Post Management
+  - Create, edit, and delete posts.
+  - View a list of posts with pagination.
+- User Interaction
+  - Like and comment on posts.
+  - Save favorite posts.
+- Profile Management
+  - View and update user profiles.
+  - Display user stats, including followers and following.
+- Responsive Design
+  - Optimized for mobile, tablet, and desktop devices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Technologies Used
+- Frontend
+  - React.js: Component-based UI library for building user interfaces.
+  - TypeScript: Typed superset of JavaScript for type safety.
+  - jTailwind CSS: Utility-first CSS framework for rapid UI development.
+- Backend
+  - Appwrite: Backend-as-a-service for authentication, database, and storage.
+- State Management
+  - React Query: Data-fetching and state management library.
+- Other Tools
+  - ESLint: JavaScript/TypeScript linting.
+  - Prettier: Code formatting.
 
-## Expanding the ESLint configuration
+# Installation
+1. Clone the Repository
+```bash
+git clone https://github.com/HoangPham6337/social-media-app.git
+cd social-media-app
+```
+2. Install Dependencies
+```bash
+npm install
+```
+3. Set Up Environment Variables
+Create a `.env.local` file in the root directory and add the following vairables:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```.env
+REACT_APP_APPWRITE_ENDPOINT=your-appwrite-endpoint
+REACT_APP_APPWRITE_PROJECT_ID=your-project-id
+REACT_APP_APPWRITE_DATABASE_ID=your-database-id
+REACT_APP_APPWRITE_COLLECTION_ID=your-collection-id
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+4. Run the Development Server
+```bash
+npm run dev
 ```
+# Acknowledgements
+All credits goes to [JavaScript Mastery](https://www.youtube.com/@javascriptmastery)
