@@ -46,10 +46,13 @@ npm install
 Create a `.env.local` file in the root directory and add the following vairables:
 
 ```.env
-REACT_APP_APPWRITE_ENDPOINT=your-appwrite-endpoint
-REACT_APP_APPWRITE_PROJECT_ID=your-project-id
-REACT_APP_APPWRITE_DATABASE_ID=your-database-id
-REACT_APP_APPWRITE_COLLECTION_ID=your-collection-id
+VITE_APPWRITE_PROJECT_ID=''
+VITE_APPWRITE_URL=''
+VITE_APPWRITE_STORAGE_ID=''
+VITE_APPWRITE_DATABASE_ID=''
+VITE_APPWRITE_SAVE_COLLECTION_ID=''
+VITE_APPWRITE_USER_COLLECTION_ID=''
+VITE_APPWRITE_POST_COLLECTION_ID=''
 ```
 
 4. Run the Development Server
