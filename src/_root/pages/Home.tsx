@@ -6,6 +6,12 @@ import PostCard from "../../components/shared/PostCard";
 const Home = () => {
   const { data: posts, isPending: isPostLoading, isError: isErrorPosts } = useGetRecentPosts();
 
+  if (isErrorPosts) {
+    return(
+      <div className="flex h1-bold md:h2-bold w-full">Something went wrong</div>
+    )
+  }
+
   return (
     <div className="flex flex-1">
       <div className="home-container">

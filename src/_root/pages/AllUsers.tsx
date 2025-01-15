@@ -1,4 +1,3 @@
-import { UNSAFE_createClientRoutesWithHMRRevalidationOptOut } from "react-router-dom";
 import Loader from "../../components/shared/Loader";
 import { useToast } from "../../hooks/use-toast"
 import { useGetUsers } from "../../lib/react-query/queriesAndMutation";
